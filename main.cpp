@@ -1,12 +1,13 @@
 #include <iostream>
-#include "Recipe.hpp"
+#include "RecipeModel.hpp"
+#include "RecipeService.hpp"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-	Recipe r1 = Recipe(0, "choclate-frosting");
-	Recipe r2 = Recipe(1, "annen-frosting");
-	Recipe r3 = Recipe(2, "Cake-with-icecream");
+	RecipeModel r1 = RecipeModel(0, "choclate-frosting");
+	RecipeModel r2 = RecipeModel(1, "annen-frosting");
+	RecipeModel r3 = RecipeModel(2, "Cake-with-icecream");
 	//Ingredient s1 = Ingredient(0, 100, 300 ,500);
 	//int recipeNumber;
 	
@@ -20,7 +21,7 @@ int main(int argc, const char * argv[]) {
 		cout<<"Please select your desired recipe?" << endl;
 		int recipeId;
 		cin >>recipeId;
-		Recipe *currentRecipe;
+		RecipeModel *currentRecipe;
 
 		if( recipeId == 1)
         {
@@ -37,8 +38,12 @@ int main(int argc, const char * argv[]) {
         }
 		
 		cout << "You have selected " + currentRecipe->getName() + "!!"<<endl;
-		//currentRecipe->printListofIgredient(); //define at recipe class, and make call to ingredairiant class.
 		cout << "For how many portion ?" << endl;
+		float portion;
+		cin>> portion;
+		cout <<"Here is the list of the ingredients for " <<portion<<" portion." << endl; //define at recipe class, and make call to ingredairiant class.
+		//RecipeService m;
+		makeRecipe(recipeId, portion);
 		//int portionNumber;
 		//cin>> portionNumber;
 

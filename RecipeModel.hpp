@@ -1,17 +1,17 @@
-#ifndef Recipe_hpp
-#define Recipe_hpp
+#ifndef RecipeModel_hpp
+#define RecipeModel_hpp
 
-#include <stdio.h>
+#include <cstdio>
 #include <string>
 //#include <list>
 using namespace std;
 
-class Recipe {
+class RecipeModel {
 private:
 	int id;
 	string name;
 public:
-	Recipe(int i, string k);
+	RecipeModel(int i, string k);
 	//void printListofIngredients();
 	string getName();
 };

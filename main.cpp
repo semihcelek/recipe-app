@@ -11,7 +11,7 @@ int main(int argc, const char * argv[]) {
 	//Ingredient s1 = Ingredient(0, 100, 300 ,500);
 	//int recipeNumber;
 	
-	cout<<"Hello, we have 3 recipe:" <<endl;
+	cout<<"Welcome to the recipe book, we have 3 recipe:" <<endl;
 		cout << "1- " + r1.getName() << endl;
 		cout << "2- " + r2.getName() << endl;
 		cout << "3- " + r3.getName() << endl;
@@ -42,13 +42,20 @@ int main(int argc, const char * argv[]) {
 		cout << "For how many portion ?" << endl;
 		float portion;
 		cin>> portion;
-		cout <<"Here is the list of the ingredients for " <<portion<<" portion." << endl; //define at recipe class, and make call to ingredairiant class.
+		cout <<"Here is the list of the ingredients for " <<portion<<" portion." << endl;
 		
 		cout <<"Recipe for " << currentRecipe->getName() << endl;
-		currentRecipe->makeRecipe()
-		r1.makeRecipe(recipeId, portion);
-		return 0;
+		currentRecipe->makeRecipe(recipeId, portion);
 		
+		cout <<"Would yo want to look other recipe? Y/N" <<endl;
+		string answer;
+		cin>> answer;
+		if (answer.compare("Y") != 0)
+        {
+            cout<<"Bye bye then!" <<endl;
+            return 0;
+        }
+
 
 	}
 	while(true);

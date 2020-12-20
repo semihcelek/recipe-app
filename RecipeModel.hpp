@@ -6,14 +6,22 @@
 //#include <list>
 using namespace std;
 
-class RecipeModel {
+class RecipeModel 
+{
 private:
 	int id;
 	string name;
 public:
 	RecipeModel(int i, string k);
-	//void printListofIngredients();
 	string getName();
+};
+
+class RecipeService : public RecipeModel
+{
+public:
+	//constructor
+	RecipeService(int i, string k);
+	int makeRecipe(int id, float portion);
 };
 
 #endif 

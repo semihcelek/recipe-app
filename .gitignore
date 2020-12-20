@@ -1,0 +1,5 @@
+*.o
+*.out
+RecipeModel.hpp.gch
+Recipe.hpp.gch
+plan

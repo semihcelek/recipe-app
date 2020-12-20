@@ -1,4 +1,3 @@
-//#include "RecipeService.hpp"
 #include "RecipeModel.hpp"
 #include "iostream"
 
@@ -7,8 +6,6 @@ using namespace std;
 RecipeService::RecipeService(int i, string k) : RecipeModel(i, k){
 	
 }
-
-
 
 int RecipeService::makeRecipe(int id, float portion) {
 		if(id ==1) {

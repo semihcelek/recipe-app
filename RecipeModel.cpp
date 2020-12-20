@@ -17,7 +17,3 @@ int RecipeModel::getId()
 	return id;
 }
 
-//void Recipe::printListofIngredients()
-//{
-
-//}

@@ -8,14 +8,11 @@ int main(int argc, const char * argv[]) {
 	RecipeService r1 = RecipeService(1, "Choclate frosting");
 	RecipeService r2 = RecipeService(2, "Almond flavored chocolate frosting");
 	RecipeService r3 = RecipeService(3, "Tarte with chocolate frosting");
-	//Ingredient s1 = Ingredient(0, 100, 300 ,500);
-	//int recipeNumber;
 	
 	cout<<"Welcome to the recipe book, we have 3 recipe:" <<endl;
 		cout << "1- " + r1.getName() << endl;
 		cout << "2- " + r2.getName() << endl;
 		cout << "3- " + r3.getName() << endl;
-
 
 	do 
 	{

@@ -12,8 +12,10 @@ private:
 	int id;
 	string name;
 public:
-	RecipeModel(int i, string k);
+	//constructor
+	RecipeModel(int i, string k); 
 	string getName();
+	int getId();
 };
 
 class RecipeService : public RecipeModel

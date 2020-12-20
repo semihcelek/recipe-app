@@ -12,6 +12,10 @@ string RecipeModel::getName()
 {
 	return name;
 }
+int RecipeModel::getId()
+{
+	return id;
+}
 
 //void Recipe::printListofIngredients()
 //{

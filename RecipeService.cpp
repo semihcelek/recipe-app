@@ -4,10 +4,10 @@
 
 using namespace std;
 
-RecipeService::RecipeService(int i, string k) : RecipeModel(i, k)
-{
- cout << "child constructor";
+RecipeService::RecipeService(int i, string k) : RecipeModel(i, k){
+	
 }
+
 
 
 int RecipeService::makeRecipe(int id, float portion) {
